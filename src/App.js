@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { fetchData } from "./redux/actions";
 import axios from "axios";
-import { Table } from "./components/Table";
+import Table from "./components/Table";
 
 const App = () => {
   const dispatch = useDispatch();

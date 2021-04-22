@@ -1,1 +1,8 @@
 export const FETCH_DATA = "FETCH_DATA";
+
+export const ADD_FILTER_ITEMS = "ADD_FILTER_ITEMS";
+export const DELETE_FILTER_ITEMS = "DELETE_FILTER_ITEMS";
+
+export const FILTRED_BY_TYPE = "FILTRED_BY_TYPE";
+export const FILTRED_BY_VALUE = "FILTRED_BY_VALUE";
+export const FILTRED_BY_DATA = "FILTRED_BY_DATA";
