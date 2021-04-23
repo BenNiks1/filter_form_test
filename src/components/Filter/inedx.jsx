@@ -7,17 +7,6 @@ export const Filter = ({ items }) => {
 
   return (
     <div className="filter">
-      {/* <label htmlFor="all">Все</label>
-      <input
-        type="checkbox"
-        id="all"
-        defaultChecked={true}
-        onChange={(e) => {
-          e.target.checked
-            ? dispatch(addFilterItems("all"))
-            : dispatch(deleteFilterItems("all"));
-        }}
-      /> */}
       {items.map((item) => (
         <div className="filter__item" key={item.id}>
           <input

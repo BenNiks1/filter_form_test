@@ -1,9 +1,10 @@
 import React from "react";
 import { Table as BootstrapTable } from "react-bootstrap";
+import { connect } from "react-redux";
 import { Filter } from "../Filter/inedx";
 import { THead } from "./THead";
 import TBody from "./TBody";
-import { connect } from "react-redux";
+
 
 const Table = ({ filtered }) => {
   return (
