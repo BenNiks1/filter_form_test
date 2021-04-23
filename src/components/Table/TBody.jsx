@@ -8,7 +8,7 @@ const TBody = ({ items }) => {
         items.map(({ id, value, type, date }) => (
           <tr key={id}>
             <td>{id}</td>
-            <td>{value}</td>
+            <td>{value} руб</td>
             <td>{type}</td>
             <td>{dayjs(date).format("MMM D, YYYY h:mm A")}</td>
           </tr>

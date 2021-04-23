@@ -19,8 +19,7 @@ export const Filter = ({ items }) => {
         }}
       /> */}
       {items.map((item) => (
-        <React.Fragment>
-          <label htmlFor={item.type}>{item.name}</label>
+        <div className="filter__item" key={item.id}>
           <input
             type="checkbox"
             id={item.type}
@@ -30,7 +29,8 @@ export const Filter = ({ items }) => {
                 : dispatch(deleteFilterItems(item.type));
             }}
           />
-        </React.Fragment>
+          <label htmlFor={item.type}>{item.name}</label>
+        </div>
       ))}
     </div>
   );

@@ -11,19 +11,23 @@ const Table = ({ filtered }) => {
       <Filter
         items={[
           {
+            id:1,
             name: "Доход",
             type: "income",
           },
           {
+            id:2,
             name: "Расход",
             type: "expense",
           },
           {
+            id:3,
             name: "За последний месяц",
             type: "lastMonth",
           },
           {
-            name: "Больше 1000 рублей",
+            id:4,
+            name: "Больше 1000р",
             type: "overThousand",
           },
         ]}
@@ -35,11 +39,10 @@ const Table = ({ filtered }) => {
     </div>
   );
 };
-
 const getFilters = (item) => ({
   income: () => item.type === "income",
   expense: () => item.type === "expense",
-  lastMonth: () => item.date >= new Date().setDate(1), 
+  lastMonth: () => item.date >= new Date().setDate(1),
   overThousand: () => item.value >= 1000,
 });
 
