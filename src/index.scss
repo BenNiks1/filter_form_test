@@ -14,7 +14,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .table {
   text-align: center;
 }
@@ -51,6 +50,26 @@ body {
   }
 }
 
+.add {
+  max-width: 500px;
+  margin: 20vh auto;
+  padding: 25px;
+
+  border: 1px solid #282828;
+  border-radius: 10px;
+  &-form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+
+    input{
+    // grid-column: span 2;
+width: 100%;
+text-align: center;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .filter {
     font-size: 14px;
@@ -62,12 +81,10 @@ body {
   }
 }
 @media screen and (max-width: 475px) {
-
   .table {
     font-size: 14px;
   }
   .filter {
-
     font-size: 12px;
     &__item {
       label {
@@ -78,10 +95,10 @@ body {
   }
 }
 @media screen and (max-width: 363px) {
-.filter{
-  font-size: 10px;
-}
-.table{
-  font-size: 12px;
-}
+  .filter {
+    font-size: 10px;
+  }
+  .table {
+    font-size: 12px;
+  }
 }
